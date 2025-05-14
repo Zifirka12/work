@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class User(AbstractUser):
-    username = models.CharField(max_length=30, verbose_name="Имя")
+    username = None
     email = models.EmailField(unique=True, verbose_name="Почта пользователя")
     tg_chat_id = models.CharField(unique=True, verbose_name="Id чата")
 

@@ -21,8 +21,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "rest_framework_simplejwt",
-    "drf-yasg",
-    "corsheader",
     "django_celery_beat",
     "habit",
     "users",
