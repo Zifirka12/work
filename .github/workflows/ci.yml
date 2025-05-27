@@ -88,7 +88,7 @@ jobs:
         run: echo ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
 
       - name: Set DockerImage name
-        run: echo "IMAGE_NAME=${{ secrets.DOCKER_HUB_USERNAME }}/habit_tracker:${{ github.sha }}" >> $GITHUB_ENV
+        run: echo "IMAGE_NAME=${{ secrets.DOCKER_HUB_USERNAME }}/habit_tracker_by_luna:${{ github.sha }}" >> $GITHUB_ENV
 
       - name: Build DockerImage
         run: docker build -t ${{ env.IMAGE_NAME }} .
